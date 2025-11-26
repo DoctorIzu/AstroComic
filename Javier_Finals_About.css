@@ -3,6 +3,32 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.hero-section {
+  position: relative;
+  height: 100vh;      
+  overflow: hidden;
+}
+
+.hero-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;   
+  z-index: 1;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  z-index: 2;                        
+  padding: 0 1rem;                   
+}
 
 .card {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -45,4 +71,5 @@
 body {
     background: linear-gradient(to right, #93a3ac, #969ca5);
 }
+
 
